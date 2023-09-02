@@ -62,6 +62,7 @@ const Project = () => {
                 {imageElements}
             </div>
             <button onClick={()=> navigate('/')} className='bg-green-400 py-2 px-3 rounded-md font-bold mt-20'>Landing Page</button>
+               <button onClick={()=> navigate('/detail')} className='bg-green-400 py-2 px-3 rounded-md font-bold mt-20 float-right'>Detail Project Page</button>
       </main>
     </>
   )
