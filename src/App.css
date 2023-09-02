@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.roboto {
+  font-family: "Roboto Condensed", sans-serif;
+}
+#kiri {
+  width: 100%; /* Atur lebar awal */
+  transition: width 2s ease-in-out; /* Terapkan transisi pada properti width */
+}
+.display-none {
+  display: none;
+}

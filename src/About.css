@@ -1,0 +1,28 @@
+.roboto {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.gambar {
+  width: 100px;
+  border-radius: 10px;
+  border: 3px solid darkgreen;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.gambar- {
+  width: 250px;
+  border-radius: 10px;
+  border: 3px solid darkgreen;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+/* Misalnya, aturan CSS untuk layar kecil */
+@media screen and (min-width: 1024px) {
+  /* Gaya CSS yang akan diterapkan ketika lebar layar kurang dari atau sama dengan 768px */
+  .gambar {
+    width: 250px;
+    border-radius: 10px;
+    border: 3px solid darkgreen;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+}
