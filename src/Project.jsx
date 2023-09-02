@@ -1,18 +1,21 @@
 import React, {useEffect, useState} from 'react';
 import 'animate.css/animate.min.css';
 import { useNavigate } from 'react-router-dom';
+
+// import gambar
+import page1 from './assets/img/porto1a.png';
+import page2 from './assets/img/porto2b.png';
+import page3 from './assets/img/porto3c.png';
+import page4 from './assets/img/porto4d.png';
+import page5 from './assets/img/porto5e.png';
+import page6 from './assets/img/porto6f.png';
+import page7 from './assets/img/porto7g.png';
+import page8 from './assets/img/porto8h.png';
+import page9 from './assets/img/porto9i.png';
+import page10 from './assets/img/porto10j.png';
 // Array sumber gambar
 const imageSources = [
-  '/src/assets/img/1.png',
-  '/src/assets/img/2.png',
-  '/src/assets/img/3.png',
-  '/src/assets/img/4.png',
-  '/src/assets/img/5.png',
-  '/src/assets/img/6.png',
-  '/src/assets/img/7.png',
-  '/src/assets/img/8.png',
-  '/src/assets/img/9.png',
-  '/src/assets/img/10.png',
+  page1,page2,page3,page4,page5,page6,page7,page8,page9,page10
 ];
 
 const Project = () => {
