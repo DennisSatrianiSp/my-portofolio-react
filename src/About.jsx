@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './About.css'
 import { useNavigate } from 'react-router-dom';
 import Formal from './assets/img/formal.jpeg';
@@ -20,8 +20,17 @@ import vscode from './assets/img/vscode.png'
 import xampp from './assets/img/xampp.png'
 
 import 'animate.css/animate.min.css'; 
+
+const onTop = () => {
+  window.scrollTo(0,0);
+}
+
 const About = () => {
     const navigate = useNavigate();
+
+    useEffect(() =>{
+      onTop();
+    })
   return (
     <div>
       <main className='min-h-screen px-5  py-3'>
