@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react'
 import './About.css'
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser,faCode } from '@fortawesome/free-solid-svg-icons';
+import { faWindows } from '@fortawesome/free-brands-svg-icons';
+// Gambar
 import Formal from './assets/img/formal.jpeg';
 import html from './assets/img/html.png'
 import css from './assets/img/css.png'
@@ -35,13 +39,13 @@ const About = () => {
     <div>
       <main className='min-h-screen px-5  py-3'>
           {/* Atas */}
-          <h1 className='text-2xl roboto text-green-800 lg:text-5xl animate__animated animate__bounceInLeft'>About Me</h1>
+          <h1 className='text-2xl roboto text-green-800 lg:text-5xl animate__animated animate__bounceInLeft'><FontAwesomeIcon icon={faUser} className='mr-2' />About Me</h1>
           <div className='flex'>
           <img src={Formal} alt="" className='gambar animate__animated animate__bounceInRight' />
           <p className='animate__animated animate__fadeInUp text-xs pt-2 lg:text-2xl lg:ml-5 text-justify'>Hai, Perkenalkan Saya Dennis Satriani Sucipto Putra, Saya adalah Mahasiswa Program Studi Teknik Informatika, Universitas Catur Insan Cendikia di Kota Cirebon. Hobi saya adalah mempelajari hal baru, dan saya memiliki keterampilan komunikasi yang sangat baik. Saya juga sedang mempelajari teknologi seperti React, Laravel, dan Next.js untuk mengembangkan keterampilan saya dalam pemrograman web.</p>
           </div>
           {/* Tengah */}
-          <h1 className='text-2xl mt-3 roboto text-green-800 lg:text-5xl'>Skill Bahasa Pemograman dan FrameWork</h1>
+          <h1 className='text-2xl mt-5 roboto text-green-800 lg:text-5xl'><FontAwesomeIcon icon={faCode} className='mr-2' />Skill Bahasa Pemograman dan FrameWork</h1>
           <div className="flex">
             <img src={html} alt="" className=' w-5 lg:w-12 mt-2 ml-2'/>
             <img src={css} alt="" className=' w-5 lg:w-12 mt-2 ml-2'/>
@@ -56,7 +60,7 @@ const About = () => {
                <img src={mysql} alt="" className=' w-5 lg:w-12 mt-2 ml-2'/>
           </div>
           {/* Bawah */}
-          <h1 className='text-2xl mt-5 roboto text-green-800 lg:text-5xl'>Software yang di gunakan</h1>
+          <h1 className='text-2xl mt-5 roboto text-green-800 lg:text-5xl'><FontAwesomeIcon icon={faWindows} className='mr-3' />Software yang di gunakan</h1>
           <div className="flex">
             <img src={linux} alt="" className=' w-5 lg:w-12 mt-2 ml-2'/>
             <img src={windows} alt="" className=' w-5 lg:w-12 mt-2 ml-2'/>

@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import 'animate.css/animate.min.css';
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faListCheck } from '@fortawesome/free-solid-svg-icons';
 
 // import gambar
 import page1 from './assets/img/porto1a.png';
@@ -55,7 +57,7 @@ const Project = () => {
   return (
     <>
       <main className='min-h-screen px-5 py-3'>
-            <h1 className='text-2xl roboto text-green-800 lg:text-5xl animate__animated animate__bounceInLeft'>Project</h1>
+            <h1 className='text-2xl roboto text-green-800 lg:text-5xl animate__animated animate__bounceInLeft'><FontAwesomeIcon icon={faListCheck} className='mr-3'/>Project</h1>
             <p className='animate__animated animate__fadeInUp text-xs pt-2 lg:text-2xl lg:ml-5 text-justify'>Berikut Beberapa Project yang saya kerjakan, Selamat Melihat, saat ini saya masih belajar banyak hal..</p>
             {/* Gambar Project */}
             <div className="flex flex-wrap -mx-2 mt-4">
